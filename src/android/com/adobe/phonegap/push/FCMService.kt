@@ -45,14 +45,14 @@ class FCMService : FirebaseMessagingService() {
 
     private val messageMap = HashMap<Int, ArrayList<String?>>()
 
-    private val FLAG_MUTABLE = if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {≤
+    private val FLAG_MUTABLE = if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
       PendingIntent.FLAG_MUTABLE
     }
     else {
       0
     }
     
-    private val FLAG_IMMUTABLE = if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {≤
+    private val FLAG_IMMUTABLE = if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
       PendingIntent.FLAG_IMMUTABLE
     }
     else {
